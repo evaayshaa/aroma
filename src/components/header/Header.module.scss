@@ -1,0 +1,107 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 8vh;
+
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .genereal{
+            width: 90%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 10px;
+
+         .navbar{
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 7px;
+                li{
+               list-style: none;
+
+               a{
+                text-decoration: none;
+                color: black;
+               }
+                }
+            }
+         }
+         .icon{
+            display: flex;
+            gap: 16px;
+         }
+         .button{
+            button{
+                padding: 10px; 
+                border: none;
+                border-radius: 15px; 
+                color: white;
+                background-color: rgb(73, 73, 191);
+            }
+           
+         }
+         .hamburger{
+            display: none;
+         }
+
+        }
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+
+    .header{
+        .container{
+            .genereal{
+                .navbar{
+                    display: none;
+                }
+                .icon{
+                    display: none;
+                }
+                .button{
+                    display: none;
+                }
+                .hamburger{
+                    display: block;
+                    svg{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:300px) and (max-width:700px) {
+
+    .header{
+        .container{
+            .genereal{
+                .navbar{
+                    display: none;
+                }
+                .icon{
+                    display: none;
+                }
+                .button{
+                    display: none;
+                }
+                .hamburger{
+                    display: block;
+                    svg{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
